@@ -1,0 +1,29 @@
+# constants
+
+tax_Rate = 0.20
+
+standard_Deduction = 10000.0
+
+dependent_Deduction = 3000.0
+
+ 
+
+# inputs
+
+income = float(input("What is your gross income?"))
+
+dependents = int(input("How many dependents do you have?"))
+
+ 
+
+# income tax formula
+
+tax_Income = income - standard_Deduction - \ dependent_Deduction * dependents
+
+incomeTax = tax_Income * tax_Rate
+
+ 
+
+# Output income tax
+
+print("Income tax is $" + str(incomeTax))
